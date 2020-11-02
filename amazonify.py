@@ -26,6 +26,7 @@ def amazonify(url, affiliate_tag):
         ...
     """
     # Ensure the URL we're getting is valid:
+    url = url.replace(" ", "")
     if not url.startswith("http"):
         url = "https://" + url
 
@@ -43,4 +44,4 @@ def amazonify(url, affiliate_tag):
 
 
 if __name__ == "__main__":
-    print(amazonify("www.amazon.it", "acuf"))
+    print(amazonify("https://www.amazon.it?tag=acuf", "acuf"))
