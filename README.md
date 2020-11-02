@@ -6,13 +6,6 @@ The simplest way to build Amazon Affiliate links, in Python.
 ![amazonify](https://github.com/rdegges/python-amazonify/raw/master/assets/amazonify.jpg)
 
 
-## Install
-
-To install ``python-amazonify``, simply run
-``pip install amazonify`` and you'll get the latest version installed
-automatically.
-
-
 ## Usage
 
 Using ``amazonify`` is really easy. All you do is pass it the Amazon URL you'd
@@ -22,7 +15,7 @@ like to make into an affiliate link, and your Amazon affiliate tag.
 >>> from amazonify import amazonify
 >>>
 >>> # Your Amazon affiliate tag:
->>> affiliate_tag = 'rdegges-20'
+>>> affiliate_tag = 'acuf59280d-21'
 >>>
 >>> # Some non-affiliate Amazon URLs:
 >>> urls = [
@@ -35,11 +28,11 @@ like to make into an affiliate link, and your Amazon affiliate tag.
 >>> affiliate_urls = [amazonify(u, affiliate_tag) for u in urls]
 >>> affiliate_urls
 [
-    'http://www.amazon.com/Canon-21-1MP-Frame-Digital-Camera/dp/B001G5ZTLS/ref=sr_1_1?tag=rdegges-20',
-    'http://www.amazon.com/Transcend-Compact-Flash-Card-400X/dp/B002WE4H8I/ref=pd_bxgy_p_img_b?tag=rdegges-20',
-    'http://www.amazon.com/Canon-LP-E6-Battery-Digital-Cameras/dp/B001KELVS0/ref=pd_bxgy_e_img_b?tag=rdegges-20',
-    'http://www.amazon.com/Canon-50mm-1-8-Camera-Lens/dp/B00007E7JU/ref=sr_1_1?tag=rdegges-20',
-    'http://www.amazon.com/Canon-70-300mm-4-5-6-Lens-Cameras/dp/B0007Y794O/ref=sr_1_3?tag=rdegges-20'
+    'http://www.amazon.com/Canon-21-1MP-Frame-Digital-Camera/dp/B001G5ZTLS/ref=sr_1_1?tag=acuf59280d-21',
+    'http://www.amazon.com/Transcend-Compact-Flash-Card-400X/dp/B002WE4H8I/ref=pd_bxgy_p_img_b?tag=acuf59280d-21',
+    'http://www.amazon.com/Canon-LP-E6-Battery-Digital-Cameras/dp/B001KELVS0/ref=pd_bxgy_e_img_b?tag=acuf59280d-21',
+    'http://www.amazon.com/Canon-50mm-1-8-Camera-Lens/dp/B00007E7JU/ref=sr_1_1?tag=acuf59280d-21',
+    'http://www.amazon.com/Canon-70-300mm-4-5-6-Lens-Cameras/dp/B0007Y794O/ref=sr_1_3?tag=acuf59280d-21'
 ]
 ```
 
@@ -53,7 +46,7 @@ Have no idea what I'm talking about? See
 
 Or...
 
-[Shop on Amazon!](http://www.amazon.com/?_encoding=UTF8&tag=rdegges-20&linkCode=ur2&camp=1789&creative=390957)
+[Shop on Amazon!](http://www.amazon.com/?_encoding=UTF8&tag=acuf59280d-21&linkCode=ur2&camp=1789&creative=390957)
 
 
 ## Tests
@@ -78,6 +71,10 @@ OK
 
 
 ## Changelog
+v0.2: 11-02-2020
+
+    - Removed support to Python 2
+    - Add support to Python 3
 
 v0.1: 5-16-2012
 

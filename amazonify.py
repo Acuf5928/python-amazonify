@@ -1,8 +1,10 @@
 """The simplest way to build Amazon Affiliate links, in Python."""
 
 
-from urlparse import urlparse, urlunparse, parse_qs
-from urllib import urlencode
+from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
+
+
+#from urllib import urlencode
 
 
 def amazonify(url, affiliate_tag):
@@ -24,6 +26,9 @@ def amazonify(url, affiliate_tag):
         ...
     """
     # Ensure the URL we're getting is valid:
+    if not url.startswith("http"):
+        url = "https://" + url
+
     new_url = urlparse(url)
     if not new_url.netloc:
         return None
@@ -35,3 +40,7 @@ def amazonify(url, affiliate_tag):
     new_url = new_url[:4] + (urlencode(query_dict, True), ) + new_url[5:]
 
     return urlunparse(new_url)
+
+
+if __name__ == "__main__":
+    print(amazonify("www.amazon.it", "acuf"))
