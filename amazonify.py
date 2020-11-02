@@ -2,9 +2,7 @@
 
 
 from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
-
-
-#from urllib import urlencode
+import requests
 
 
 def amazonify(url, affiliate_tag):
@@ -30,6 +28,9 @@ def amazonify(url, affiliate_tag):
     if not url.startswith("http"):
         url = "https://" + url
 
+    # resolve amzn.to links
+    url = requests.head(url, allow_redirects=True).url
+
     new_url = urlparse(url)
     if not new_url.netloc:
         return None
@@ -44,4 +45,4 @@ def amazonify(url, affiliate_tag):
 
 
 if __name__ == "__main__":
-    print(amazonify("https://www.amazon.it?tag=acuf", "acuf"))
+    print(amazonify("https://amzn.to/35TyRqE", "acuf"))

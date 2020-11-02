@@ -71,6 +71,10 @@ OK
 
 
 ## Changelog
+v0.3: 11-02-2020
+
+    - Add support for amzn.to links
+    
 v0.2: 11-02-2020
 
     - Removed support to Python 2
