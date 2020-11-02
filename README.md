@@ -56,7 +56,7 @@ Or...
 Want to run the tests? No problem:
 
 ``` bash
-$ git clone git://github.com/rdegges/python-amazonify.git
+$ git clone https://github.com/Acuf5928/python-amazonify
 $ cd python-amazonify
 $ python setup.py develop
 ...
@@ -79,3 +79,6 @@ v0.2: 11-02-2020
 v0.1: 5-16-2012
 
     - Initial release!
+    
+## Credits
+Original project https://github.com/rdegges/python-amazonify

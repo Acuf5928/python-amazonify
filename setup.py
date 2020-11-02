@@ -18,10 +18,10 @@ setup(
     install_requires = [],
 
     # Metadata for PyPI:
-    author = 'Randall Degges',
-    author_email = 'rdegges@gmail.com',
+    author = 'Acuf5928',
+    author_email = 'alberto.cuffaro@hotmail.it',
     license = 'UNLICENSE',
-    url = 'https://github.com/rdegges/python-amazonify',
+    url = 'https://github.com/Acuf5928/python-amazonify',
     keywords = 'amazon affiliate web',
     description = 'The simplest way to build Amazon Affiliate links, in Python.',
     long_description = open(normpath(join(dirname(abspath(__file__)),
